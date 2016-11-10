@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <title>My Social App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="Login">
+        <h1>My SNS Login</h1>
+        <p>아이디</p><input type="text" class="loginID" placeholder="id" />
+        <br />
+        <p>비밀번호</p><input type="password" class="loginPw" placeholder="password" />
+        <br />
+        <button class="loginBtnLogin">로그인</button>
+        <button class="loginBtnJoin">회원가입</button>
+      </div>
+      <div class="Join">
+        <h1>My SNS Join</h1>
+        <p>아이디</p><input type="text" class="joinID" maxlength="50" />
+        <p>비밀번호</p><input type="password" class="joinPw" maxlength="50" />
+        <p>비밀번호 재입력</p><input type="password" class="joinPwc" maxlength="50" />
+        <br />
+        <button class="joinBtnJoin">가입하기</button>
+        <button class="joinBtnCancel">가입취소</button>
+      </div>
+      <div class="Main">
+        <div class="Navi">
+          <div class="NaviPadding">
+            <h1>My SNS Service</h1>
+            <p></p>
+            <button class="mainBtnWrite AppBtnBlue">글쓰기</button>
+            <button class="mainBtnLogout AppBtnRed">로그아웃</button>
+          </div>
+        </div>
+        <div class="HeightPadding"></div>
+        <div class="Items">
+          <div class="Item">
+            <div class="ItemText">
+              <div class="ItemButtons">
+              </div>
+            </div>
+            <div class="Comment">
+              <input type="text" class="itemTxtComment" placeholder="댓글입력..." />
+              <button class="commentBtnWrite AppBtnBlue">댓글 달기</button>
+              <div class="Comments">
+                <div class="CommentItem">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Write">
+        <div class="Navi">
+          <div class="NaviPadding">
+            <h1>My SNS Service</h1>
+            <p></p>
+            <button class="mainBtnWrite AppBtnBlue">글쓰기</button>
+            <button class="mainBtnLogout AppBtnRed">로그아웃</button>
+          </div>
+        </div>
+        <div class="HeightPadding"></div>
+        <p>제목</p><input type="text" class="writeTxtSubject" placeholder="제목을 입력하세요" maxlength="50" />
+        <p>내용</p><textarea class="writeTxtContent" placeholder="내용을 입력하세요"></textarea>
+        <div class="ItemButtons">
+          <button class="writeBtnWrite AppBtnBlue">작성하기</button>
+          <button class="writeBtnCancel AppBtnRed">작성취소</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+  </body>
+</html>
